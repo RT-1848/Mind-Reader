@@ -8,10 +8,19 @@
     <title>Mind Reader</title>
 </head>
 <body>
-    <h1>Enter in a number. The computer will read your mind.</h1>
-    <input type="number" id="num">
-    <br>
-    <button>Read My Mind</button>
+    <div class="container" id="mainContainer">
+        <h1>Enter in a number. The AI will read your mind.</h1>
+        <input class="inputNum" type="number" id="num" required>
+        <br>
+        <button class="buttonMind" onclick="move()">Read My Mind</button>
+        <br>
+        <div id="progressBarBox">
+            <div id="loadingBar"></div>
+        </div>
+        <h2 id="readingTheMind"></h2>
+        <div id="explosion"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="index.js"></script>
 </body>
 </html>
